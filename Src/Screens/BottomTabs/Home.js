@@ -4,81 +4,82 @@ import { TypeAnimation } from 'react-native-type-animation';
 
 import SearchIcon from "react-native-vector-icons/Ionicons"
 import { Dimensions } from 'react-native';
-import womensImage from "../../Assets/women.webp"
-import MensImage from "../../Assets/men.webp"
-import AcImage from "../../Assets/AC.webp"
-import cleaningImage from "../../Assets/cleaning.webp"
-import electricImage from "../../Assets/electric.webp"
-import waterImage from "../../Assets/water.webp"
-import smartLockImage from "../../Assets/smartLock.webp"
-import paintImage from "../../Assets/paint.webp"
-import firstImage from "../../Assets/first.jpeg"
-import secondImage from "../../Assets/second.jpeg"
-import thirdImage from "../../Assets/third.jpeg"
-import fourthImage from "../../Assets/fourth.jpeg"
-import fiveImage from "../../Assets/five.jpeg"
-import sixImage from "../../Assets/six.jpeg"
-import smartlock from "../../Assets/smartlock.jpeg"
-import nativePurifier from "../../Assets/nativePurifier.jpeg"
-import bathroom from "../../Assets/bathroom.jpeg"
-import painting from "../../Assets/painting.jpeg"
-import hairStudio from "../../Assets/hairStudio.jpeg"
-import AcService from "../../Assets/AcService.png"
-import PowersaverAC from "../../Assets/1682671878656-d02ec7.jpeg"
-import AcRepair from "../../Assets/AcService.png"
-import ClassicBathroom from "../../Assets/1656047929083-beff0d.jpeg"
-import InstanceBathroom from "../../Assets/1659102409372-8ca38a.png"
-import HairCut from "../../Assets/1677519626723-82ff21.jpeg"
-import SofaClean from "../../Assets/1659096798036-9b40ee.webp"
-import Stress from "../../Assets/1652164246962-f39965.webp"
-import ElysianBritish from "../../Assets/1658419126640-e79fa1.webp"
+import womensImage from "../../../Assets/women.webp"
+import MensImage from "../../../Assets/men.webp"
+import AcImage from "../../../Assets/AC.webp"
+import cleaningImage from "../../../Assets/cleaning.webp"
+import electricImage from "../../../Assets/electric.webp"
+import waterImage from "../../../Assets/water.webp"
+import smartLockImage from "../../../Assets/smartLock.webp"
+import paintImage from "../../../Assets/paint.webp"
+import firstImage from "../../../Assets/first.jpeg"
+import secondImage from "../../../Assets/second.jpeg"
+import thirdImage from "../../../Assets/third.jpeg"
+import fourthImage from "../../../Assets/fourth.jpeg"
+import fiveImage from "../../../Assets/five.jpeg"
+import sixImage from "../../../Assets/six.jpeg"
+import smartlock from "../../../Assets/smartlock.jpeg"
+import nativePurifier from "../../../Assets/nativePurifier.jpeg"
+import bathroom from "../../../Assets/bathroom.jpeg"
+import painting from "../../../Assets/painting.jpeg"
+import hairStudio from "../../../Assets/hairStudio.jpeg"
+import AcService from "../../../Assets/AcService.png"
+import PowersaverAC from "../../../Assets/1682671878656-d02ec7.jpeg"
+import AcRepair from "../../../Assets/AcService.png"
+import ClassicBathroom from "../../../Assets/1656047929083-beff0d.jpeg"
+import InstanceBathroom from "../../../Assets/1659102409372-8ca38a.png"
+import HairCut from "../../../Assets/1677519626723-82ff21.jpeg"
+import SofaClean from "../../../Assets/1659096798036-9b40ee.webp"
+import Stress from "../../../Assets/1652164246962-f39965.webp"
+import ElysianBritish from "../../../Assets/1658419126640-e79fa1.webp"
 import Video, { VideoRef } from 'react-native-video';
-import video1 from '../../Assets/Videos/14907580-uhd_2160_3840_60fps.mp4'
-import video2 from '../../Assets/Videos/15465878-hd_1080_1920_30fps.mp4'
-import video3 from '../../Assets/Videos/17687288-uhd_2160_3840_30fps.mp4'
-import video4 from '../../Assets/Videos/17169505-hd_1080_1920_30fps.mp4'
-import video5 from '../../Assets/Videos/14907580-uhd_2160_3840_60fps.mp4'
-import saloonImage1 from "../../Assets/1717397984511-247afe.jpeg"
-import saloonImage2 from "../../Assets/1717398014369-209a76.webp"
-import saloonImage3 from "../../Assets/1717397992635-09b511.jpeg"
-import saloonImage4 from "../../Assets/1717398005609-e19abc.jpeg"
-import saloonImage5 from "../../Assets/1717398009148-4b7a11.jpeg"
-import saloonImage6 from "../../Assets/1717398018197-c68fcc.jpeg"
-import stressRelief from "../../Assets/1700143543316-c5eb5c.webp"
-import painRelief from "../../Assets/1700143539186-26f4e5.webp"
-import NaturalSkin from "../../Assets/1700143553928-f5f936.webp"
-import masssageformen from "../../Assets/1655116252308-ac6dfd.webp"
-import cleaning_control1 from "../../Assets/1700129474836-c5b146.webp"
-import cleaning_control2 from "../../Assets/1700141161917-028287.webp"
-import cleaning_control3 from "../../Assets/1700204929955-75dd47.webp"
-import repair1 from "../../Assets/1700141800784-5ca077.webp"
-import repair2 from "../../Assets/1700141956384-2e00b1.webp"
-import repair3 from "../../Assets/1700137604899-896004.webp"
-import repair4 from "../../Assets/1715151214463-bd0865.webp"
-import repair5 from "../../Assets/1700142017541-7905b3.webp"
-import repair6 from "../../Assets/1700137613735-a7d95a.webp"
-import repair7 from "../../Assets/1700142193374-61370a.webp"
-import repair8 from "../../Assets/1700198936506-15c0e3.webp"
-import quickrepair1 from "../../Assets/1652172643970-9ad67b.webp"
-import quickrepair2 from "../../Assets/1653632250914-ca15c6.webp"
-import quickrepair3 from "../../Assets/1653643393656-013703.webp"
-import quickrepair4 from "../../Assets/1653645917034-f5ecc5.webp"
-import quickrepair5 from "../../Assets/1653646139213-3c072a.webp"
-import quickrepair6 from "../../Assets/1653648546142-327cb9.webp"
-import quickrepair7 from "../../Assets/1653890923765-57dea3.webp"
-import quickrepair8 from "../../Assets/1653892249137-8848bb.webp"
-import quickrepair9 from "../../Assets/1653983252697-ae30db.webp"
-import quickrepair10 from "../../Assets/1701149688871-2980d1.webp"
+import video1 from '../../../Assets/Videos/14907580-uhd_2160_3840_60fps.mp4'
+import video2 from '../../../Assets/Videos/15465878-hd_1080_1920_30fps.mp4'
+import video3 from '../../../Assets/Videos/17687288-uhd_2160_3840_30fps.mp4'
+import video4 from '../../../Assets/Videos/17169505-hd_1080_1920_30fps.mp4'
+import video5 from '../../../Assets/Videos/14907580-uhd_2160_3840_60fps.mp4'
+import saloonImage1 from "../../../Assets/1717397984511-247afe.jpeg"
+import saloonImage2 from "../../../Assets/1717398014369-209a76.webp"
+import saloonImage3 from "../../../Assets/1717397992635-09b511.jpeg"
+import saloonImage4 from "../../../Assets/1717398005609-e19abc.jpeg"
+import saloonImage5 from "../../../Assets/1717398009148-4b7a11.jpeg"
+import saloonImage6 from "../../../Assets/1717398018197-c68fcc.jpeg"
+import stressRelief from "../../../Assets/1700143543316-c5eb5c.webp"
+import painRelief from "../../../Assets/1700143539186-26f4e5.webp"
+import NaturalSkin from "../../../Assets/1700143553928-f5f936.webp"
+import masssageformen from "../../../Assets/1655116252308-ac6dfd.webp"
+import cleaning_control1 from "../../../Assets/1700129474836-c5b146.webp"
+import cleaning_control2 from "../../../Assets/1700141161917-028287.webp"
+import cleaning_control3 from "../../../Assets/1700204929955-75dd47.webp"
+import repair1 from "../../../Assets/1700141800784-5ca077.webp"
+import repair2 from "../../../Assets/1700141956384-2e00b1.webp"
+import repair3 from "../../../Assets/1700137604899-896004.webp"
+import repair4 from "../../../Assets/1715151214463-bd0865.webp"
+import repair5 from "../../../Assets/1700142017541-7905b3.webp"
+import repair6 from "../../../Assets/1700137613735-a7d95a.webp"
+import repair7 from "../../../Assets/1700142193374-61370a.webp"
+import repair8 from "../../../Assets/1700198936506-15c0e3.webp"
+import quickrepair1 from "../../../Assets/1652172643970-9ad67b.webp"
+import quickrepair2 from "../../../Assets/1653632250914-ca15c6.webp"
+import quickrepair3 from "../../../Assets/1653643393656-013703.webp"
+import quickrepair4 from "../../../Assets/1653645917034-f5ecc5.webp"
+import quickrepair5 from "../../../Assets/1653646139213-3c072a.webp"
+import quickrepair6 from "../../../Assets/1653648546142-327cb9.webp"
+import quickrepair7 from "../../../Assets/1653890923765-57dea3.webp"
+import quickrepair8 from "../../../Assets/1653892249137-8848bb.webp"
+import quickrepair9 from "../../../Assets/1653983252697-ae30db.webp"
+import quickrepair10 from "../../../Assets/1701149688871-2980d1.webp"
 import CartIcon from "react-native-vector-icons/Feather"
-import stressReliefforman from "../../Assets/1700135826199-2ae5f2.webp"
-import painReliefforman from "../../Assets/1700135813754-417df5.webp"
-import postworkout from "../../Assets/1700135829701-85b36c.webp"
-import NativeSmartLock from "../../Assets/smart-locks.png"
-import womensaloonimg1 from "../../Assets/1672324465583-2688a9.webp"
-import womensaloonimg2 from "../../Assets/1669023257508-ffd582.webp"
-import womensaloonimg3 from "../../Assets/1673936988512-276a19.webp"
-// import womensaloonimg from "../../Assets/1672324465583-2688a9.webp"
+import stressReliefforman from "../../../Assets/1700135826199-2ae5f2.webp"
+import painReliefforman from "../../../Assets/1700135813754-417df5.webp"
+import postworkout from "../../../Assets/1700135829701-85b36c.webp"
+import NativeSmartLock from "../../../Assets/smart-locks.png"
+import womensaloonimg1 from "../../../Assets/1672324465583-2688a9.webp"
+import womensaloonimg2 from "../../../Assets/1669023257508-ffd582.webp"
+import womensaloonimg3 from "../../../Assets/1673936988512-276a19.webp"
+// import womensaloonimg from "../../../Assets/1672324465583-2688a9.webp"
 import GetLocation from 'react-native-get-location'
+import { useNavigation } from '@react-navigation/native';
 
 
 
@@ -100,7 +101,7 @@ const Home = () => {
     const [modalVisible, setModalVisible] = useState(false);
 
 
-
+const navigation=useNavigation()
 
 
 
@@ -382,10 +383,16 @@ const Home = () => {
                     <Text style={{ fontSize: 22, fontWeight: "bold" }}>New and noteworthy</Text>
                     <View style={{ marginTop: 15 }}>
                         <ScrollView horizontal={true}>
-                            <View style={{ alignItems: "center" }}>
+                            <TouchableOpacity 
+                           onPress={() => navigation.navigate('SmartLock')}
+                            
+                            >
+                            <View style={{ alignItems: "center" }} 
+                            >
                                 <Image style={styles.scrolledImages2} source={smartlock} />
                                 <Text>Smart Locks</Text>
                             </View>
+                            </TouchableOpacity>
                             <View style={{ alignItems: "center" }}>
                                 <Image style={styles.scrolledImages2} source={nativePurifier} />
                                 <Text>Native Water{"\n"}Purifier</Text>
@@ -611,11 +618,14 @@ const Home = () => {
 
                     </View>
                     <ScrollView horizontal={true}>
-                        <View style={styles.salonView}>
+                       <TouchableOpacity onPress={()=>navigation.navigate("SpaForWomen")}>
+                       <View style={styles.salonView}>
                             <Text style={styles.salontext}>Stress Relief</Text>
                             <Image style={styles.salonImage} source={stressRelief} />
 
                         </View>
+                       </TouchableOpacity>
+                       
 
                         <View style={styles.salonView}>
                             <Text style={styles.salontext}>Pain Relief</Text>
@@ -917,7 +927,7 @@ const styles = StyleSheet.create({
     },
     searchview: {
         flexDirection: "row",
-        height: windowHeight * .05,
+        // height: windowHeight * .05,
         width: windowWidth * .9,
         borderWidth: 2,
         borderColor: "#f5f5f5",
@@ -944,7 +954,8 @@ const styles = StyleSheet.create({
         marginRight: 12
     },
     CatagoryImage: {
-        height: 60,
+        height: windowHeight * .08,
+        
         width: 50
     },
     FirstCatagoryView: {
@@ -969,8 +980,8 @@ const styles = StyleSheet.create({
     },
     scrolledImages: {
         height: windowHeight * 0.2,
-        width: windowWidth * 0.8,
-        marginRight: 10,
+        width: windowWidth * 0.7,
+        marginRight:"1%",
         resizeMode: "contain"
 
     },
